@@ -1,0 +1,786 @@
+[
+  {
+    "number": "991-00012",
+    "name": "Calibration Block",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "454-00001",
+    "name": "1pc Sample Reservoir, Multi-well",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master Carton, open the pack and take 1"
+  },
+  {
+    "number": "999-00017",
+    "name": "Sample 20ul Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master Cartonand take 1"
+  },
+  {
+    "number": "999-00018",
+    "name": "Sample 300ul Tips",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00019",
+    "name": "Sample 1000ul Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00028",
+    "name": "Aluminum Block Set",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00030",
+    "name": "4-in-1 Tube Rack Set",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00076",
+    "name": "NEST 12-Well Reservoir 15 ml",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00078",
+    "name": "NEST 1-Well Reservoir 195 ml",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00050",
+    "name": "NEST 0.1 mL 96 Well PCR Plate, Full Skirt",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00048",
+    "name": "NEST 96-Well Cell Culture Plate",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00092",
+    "name": "NEST 1.5 mL Microcentrifuge Tube",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "In this box are 10 packs 400 eaches  - For PICK 1 EA = 5 packs of 400 (2000 eaches)"
+  },
+  {
+    "number": "999-00093",
+    "name": "NEST 2.0 mL Microcentrifuge Tube",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "In this box are 10 packs 400 eaches  - For PICK 1 EA = 5 packs of 400 (2000 eaches)"
+  },
+  {
+    "number": "999-00066",
+    "name": "NEST 15 mL Centrifuge Tube",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00068",
+    "name": "NEST 50 ml Centrifuge Tube",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00070",
+    "name": "NEST 0.5 mL Sample Vial",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master Carton  and take 1 pack of 500"
+  },
+  {
+    "number": "999-00072",
+    "name": "NEST 1.5 mL Sample Vial",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master Carton  and take 1 pack of 500"
+  },
+  {
+    "number": "999-00074",
+    "name": "NEST 2.0 mL Sample Vial",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master Carton  and take 1 pack of 500"
+  },
+  {
+    "number": "999-00103",
+    "name": "NEST Deep Well Plates",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00104",
+    "name": "Library Prep Bundle",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00100",
+    "name": "Automation Seals",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA =  take 1 pack of 10, do not open pack"
+  },
+  {
+    "number": "999-00097",
+    "name": "Temperature Module (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00098",
+    "name": "Magnetic Module (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00001",
+    "name": "Thermocycler",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00014",
+    "name": "Opentrons 20uL Tip Racks and Refills - 9,216 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00015",
+    "name": "Opentrons 300uL Tip Racks and Refills - 9,216 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete boxx"
+  },
+  {
+    "number": "991-00005",
+    "name": "Opentrons 1000uL Tip Racks and Refills - 4,608 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00007",
+    "name": "Opentrons 20uL Tip Racks - 4,800 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00008",
+    "name": "Opentrons 300uL Tip Racks - 4,800 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00003",
+    "name": "Opentrons 1000uL Tip Racks - 4,800 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00011",
+    "name": "Opentrons 20uL Tip Refills - 9,600 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00012",
+    "name": "Opentrons 300uL Tip Refills - 9,600 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00004",
+    "name": "Opentrons 1000uL Tip Refills - 4,800 Tips",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00010",
+    "name": "Opentrons 20ul Filter Tips Racks (4800 Tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00011",
+    "name": "Opentrons 200ul Filter Tips Racks (4800 Tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00006",
+    "name": "Opentrons 1000ul Filter Tips Racks (4800 Tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00002",
+    "name": "P20 Single Channel (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00003",
+    "name": "P300 Single Channel (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00004",
+    "name": "P1000 Single Channel (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00005",
+    "name": "P20 Multi Channel (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00006",
+    "name": "P300 Multi Channel (GEN2)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00111",
+    "name": "OT-2 Refresh",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00047",
+    "name": "OT-2",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00112",
+    "name": "HEPA FILTER",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00137",
+    "name": "HEPA Module - 110-130V 60Hz Model",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00139",
+    "name": "HEPA Module - 220-240V 50Hz Model",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00028",
+    "name": "OT2-IEC American AC Power Cable Type B",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00029",
+    "name": "OT2-IEC Japan AC Power Cord Type B",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00030",
+    "name": "OT2-IEC South Africa AC Power Cord Type D",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00031",
+    "name": "OT2-IEC India AC Power Cord Type D",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00032",
+    "name": "OT2-IEC Australia AC Power Cord Type I",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00033",
+    "name": "OT2-IEC China AC Power Cord Type F",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00034",
+    "name": "OT2-IEC European AC Power Cord Type E",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00035",
+    "name": "OT2-IEC Israel AC Power Cord Type H",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00036",
+    "name": "OT2-IEC Italy AC Power Cord Type C,F,L",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00037",
+    "name": "OT2-IEC Switzerland AC Power Cord Type J",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "991-00038",
+    "name": "OT2-IEC United Kingdom AC Power Cord Type G",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master Carton and take 1"
+  },
+  {
+    "number": "999-00157",
+    "name": "Heater-Shaker Module",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00064",
+    "name": "PCR plate",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00065",
+    "name": "Flat Bottom Plate Adapter",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00066",
+    "name": "Deep Well Adapter",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00067",
+    "name": "Universal Flat Adapter",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00078",
+    "name": "Automation Seals - Thermocycler Gen2",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00076",
+    "name": "Opentrons Tough 0.2 mL 96-Well PCR Plate, Full Skirt",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00174",
+    "name": "Thermocycler GEN2 Module",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00089",
+    "name": "(10 pack = 1EA) Thermocycler Seals GEN2",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA =  take 1 pack of 10, do not open pack"
+  },
+  {
+    "number": "999-00207",
+    "name": "NEST 1-Well Reservoir, 290mL (50 count)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00209",
+    "name": "Thermocycler GEN2-R Module",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00149",
+    "name": "Checkit Go 5 uL Volumetric Verification Kit",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00150",
+    "name": "Checkit Go 10 uL Volumetric Verification Kit",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00151",
+    "name": "Checkit Go 20 uL Volumetric Verification Kit",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00152",
+    "name": "Checkit Go 50 uL Volumetric Verification Kit",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00197",
+    "name": "Opentrons Flex Sample Filter Tips 50/200/1000 uL- Not For Resale",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 EA = Open Master and take 1 pack"
+  },
+  {
+    "number": "991-00169",
+    "name": "OT-2 Front Door Replacement Kit",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00191",
+    "name": "Opentrons Flex Robot",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00194",
+    "name": "Opentrons Flex Gripper GEN1",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00186",
+    "name": "Opentrons Flex 1-Channel Pipette (1-50 µl)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00187",
+    "name": "Opentrons Flex 1-Channel Pipette (5-1000 µl)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00188",
+    "name": "Opentrons Flex 8-Channel Pipette (1-50 µl)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00189",
+    "name": "Opentrons Flex 8-Channel Pipette (5-1000 µl)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00196",
+    "name": "Opentrons Flex 96-Channel Pipette (5-1000 µl)",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00204",
+    "name": "Opentrons Flex Magnetic Block GEN1",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00199",
+    "name": "Opentrons Flex Caddy and Calibration Adapter for Temperature Module GEN2",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00200",
+    "name": "Opentrons Flex Caddy and Calibration Adapter for Thermocycler GEN2",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00198",
+    "name": "Opentrons Flex Caddy and Calibration Adapter for Heater-Shaker GEN1",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "999-00201",
+    "name": "Opentrons Flex Waste Chute GEN1",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00202",
+    "name": "Opentrons Flex 96-Channel Tip Rack Adapter (2 count)",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1 pack"
+  },
+  {
+    "number": "999-00203",
+    "name": "Opentrons Flex Deck Expansion Set (4 count)",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00101",
+    "name": "Opentrons Flex Tips, 20 Racks, 50 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00102",
+    "name": "Opentrons Flex Tips, 20 Racks, 200 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00103",
+    "name": "Opentrons Flex Tips, 20 Racks, 1000 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00104",
+    "name": "Opentrons Flex Filter Tips, 20 Racks, 50 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00105",
+    "name": "Opentrons Flex Filter Tips, 20 Racks, 200 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00106",
+    "name": "Opentrons Flex Filter Tips, 20 Racks, 1000 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00107",
+    "name": "Opentrons Flex Tips, 20 Refills, 50 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00108",
+    "name": "Opentrons Flex Tips, 20 Refills, 200 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00109",
+    "name": "Opentrons Flex Tips, 20 Refills, 1000 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00110",
+    "name": "Opentrons Flex Filter Tips, 20 Refills, 50 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00111",
+    "name": "Opentrons Flex Filter Tips, 20 Refills, 200 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00112",
+    "name": "Opentrons Flex Filter Tips, 20 Refills, 1000 µL (1,920 tips)",
+    "serial": "No",
+    "lot": "Yes",
+    "description": "For PICK 1 BX = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00148",
+    "name": "Opentrons Flex Deck Expansion Set",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = Open Master and take 1"
+  },
+  {
+    "number": "991-00288",
+    "name": "OT2 Trash Chute, 218mm X 204mm",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00220",
+    "name": "Temp Module GEN2 - MODULE ONLY",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00197",
+    "name": "Opentrons Flex HEPA/UV Module",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00207",
+    "name": "TD ADAPTER, 1.5 - 2mL Thermal Block - PACKAGED ASSEMBLY",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00208",
+    "name": "TD ADAPTER, PCR Thermal Block - PACKAGED ASSEMBLY",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00209",
+    "name": "TD ADAPTER, FLAT PLATE ADAPTER, OT2- PACKAGED ASSEMBLY",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00211",
+    "name": "TD ADAPTER, DEEP WELL ADAPTER - PACKAGED ASSEMBLY",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00213",
+    "name": "TD ADAPTER, FLAT PLATE ADAPTER, FLEX - PACKAGED ASSEMBLY",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "999-00227",
+    "name": "FLEX WASTE CHUTE \nASSEMBLY GEN2",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "992-00022",
+    "name": "Opentrons Flex HEPA / UV Flex Upgrade Kit",
+    "serial": "No",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  },
+  {
+    "number": "991-00070",
+    "name": "Thermocycler Power Supply GEN2",
+    "serial": "Yes",
+    "lot": "No",
+    "description": "For PICK 1 EA = DO NOT OPEN Master Carton, take complete box"
+  }
+]
