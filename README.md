@@ -22,6 +22,12 @@ OPT Catalog is a simple mobile application for searching products in a database.
 - Room Database
 - Hilt for Dependency Injection
 
+## Beta Testing
+The application is currently in a closed beta testing phase. If you would like to test it, you can join the Google discussion group "OPT Catalog" at the following link: [Google Group - OPT Catalog](https://groups.google.com/g/opt-catalog). There, you will find the link to access the application.
+
+
+
+
 
 ![screen3](https://github.com/user-attachments/assets/2ccf7b75-555d-437f-9300-c6bee1b11f33)  ![screen1](https://github.com/user-attachments/assets/5f3d0462-47d4-46b0-8458-c6e73d5a9141)
 
