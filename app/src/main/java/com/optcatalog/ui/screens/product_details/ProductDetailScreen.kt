@@ -46,7 +46,7 @@ fun ProductDetailScreen(
                     )
                 },
                 colors = topAppBarColors(
-                    containerColor = Color(0xFF475D92)
+                    containerColor = Color(0xFF37474F)
                 )
             )
         }

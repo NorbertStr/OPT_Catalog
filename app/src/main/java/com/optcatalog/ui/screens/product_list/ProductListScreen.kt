@@ -2,13 +2,9 @@ package com.optcatalog.ui.screens.product_list
 
 import AppTheme
 import android.content.res.Configuration
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -19,10 +15,13 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
@@ -32,7 +31,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -41,9 +39,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.optcatalog.data.model.Product
-
 import kotlinx.coroutines.flow.MutableStateFlow
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ProductListScreen(
     searchProduct: (String) -> Unit,
@@ -54,69 +52,64 @@ fun ProductListScreen(
 
     var query by rememberSaveable { mutableStateOf("") }
 
-    Scaffold { innerPadding ->
-        Column(
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                colors = TopAppBarColors(
+                    containerColor = Color(0xFF37474F),
+                    scrolledContainerColor = Color(0xFF37474F),
+                    navigationIconContentColor = Color.Black,
+                    titleContentColor = Color.LightGray,
+                    actionIconContentColor = Color.Black
+                ),
+                title = {
+                    OutlinedTextField(
+                        value = query,
+                        onValueChange = { query = it },
+                        singleLine = true,
+                        shape = RoundedCornerShape(16.dp),
+                        textStyle = TextStyle(
+                            fontSize = 17.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        ),
+                        placeholder = {
+                            Row {
+                                Icon(
+                                    imageVector = Icons.Filled.Search, contentDescription = "",
+                                    modifier = Modifier.padding(end = 5.dp)
+                                )
+                                Text(
+                                    text = "Search", color = Color.LightGray
+                                )
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Number,
+                        ),
+                        modifier = Modifier
+                            .clip(shape = RoundedCornerShape(16.dp))
+                            .background(Color(0xFF546E7A))
+                            .fillMaxWidth()
+                    )
+                },
+               navigationIcon = { DropdownMenu() }
+            )
+        }
+    ) { innerPadding ->
+
+        searchProduct(query)
+
+        LazyColumn(
+            verticalArrangement = Arrangement.spacedBy(16.dp),
             modifier = Modifier
                 .padding(innerPadding)
                 .fillMaxSize()
         ) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(shape = RoundedCornerShape(16.dp))
-                    .padding(10.dp)
-                    .shadow(
-                        elevation = 3.dp,
-                        shape = RoundedCornerShape(16.dp),
-                        ambientColor = Color.Gray
-                    )
-                    .border(
-                        border = BorderStroke(width = 1.dp, color = Color.DarkGray),
-                        shape = RoundedCornerShape(16.dp)
-                    )
-            ) {
-                OutlinedTextField(
-                    value = query,
-                    onValueChange = { query = it },
-                    singleLine = true,
-                    shape = RoundedCornerShape(16.dp),
-                    textStyle = TextStyle(
-                        fontSize = 17.sp,
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
-                    ),
-                    placeholder = {
-                        Row {
-                            Icon(
-                                imageVector = Icons.Filled.Search, contentDescription = "",
-                                modifier = Modifier.padding(end = 5.dp)
-                            )
-                            Text(
-                                text = "Search", color = Color.Gray
-                            )
-                        }
-                    },
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number,
-                    ),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clip(shape = RoundedCornerShape(16.dp))
-                        .background(Color(0xFF475D92)),
-                )
-            }
-
-            searchProduct(query)
-
-            LazyColumn(verticalArrangement = Arrangement.spacedBy(16.dp),
-                modifier = Modifier.clickable {
-
-                }) {
-                items(searchResults.value) {
-                    ItemRow(product = it, modifier = Modifier.clickable {
-                        it.let(onNavigate)
-                    })
-                }
+            items(searchResults.value) {
+                ItemRow(product = it, modifier = Modifier.clickable {
+                    it.let(onNavigate)
+                })
             }
         }
     }
