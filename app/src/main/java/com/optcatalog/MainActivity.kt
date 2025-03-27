@@ -1,7 +1,10 @@
 package com.optcatalog
+
 import AppTheme
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.collectAsState
@@ -17,14 +20,14 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge(statusBarStyle = SystemBarStyle.dark(Color.TRANSPARENT))
+
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             val viewModel = hiltViewModel<MainViewModel>()
 
             viewModel.loadProductsFromFirebase()
             AppTheme {
-
                 val navController = rememberNavController()
                 val viewModel = hiltViewModel<MainViewModel>()
                 lateinit var product : Product
@@ -44,7 +47,12 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable("ProductDetailScreen"){
-                        ProductDetailScreen(product = product)
+                        ProductDetailScreen(
+                            product = product,
+                            onBackProductList = { navController.navigate("ProductList"){
+                                popUpTo(0)
+                            } }
+                        )
 
                     }
                 }
