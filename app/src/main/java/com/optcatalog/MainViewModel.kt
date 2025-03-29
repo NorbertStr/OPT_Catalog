@@ -4,21 +4,21 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.optcatalog.data.model.Product
+import com.optcatalog.data.repositories.FirebaseRepository
 import com.optcatalog.data.repositories.ProductRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val repository: ProductRepository
+    private val repository: ProductRepository,
+    private val firebaseRepository: FirebaseRepository
 ) : ViewModel(){
 
 //    val products = repository.getAllProduct()
@@ -26,6 +26,15 @@ class MainViewModel @Inject constructor(
 
     private val _searchResults = MutableStateFlow<List<Product>>(emptyList())
     val products: StateFlow<List<Product>> = _searchResults.asStateFlow()
+
+    private val _firebaseProducts = MutableStateFlow<List<Product>>(emptyList())
+    val firebaseProducts: StateFlow<List<Product>> = _firebaseProducts.asStateFlow()
+
+    fun loadProductsFromFirebase(){
+        viewModelScope.launch {
+            _firebaseProducts.value = firebaseRepository.getAllProductsFromFirebase()
+        }
+    }
 
     fun searchProduct(product: String) {
         viewModelScope.launch {

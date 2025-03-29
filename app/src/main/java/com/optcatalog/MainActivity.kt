@@ -1,13 +1,10 @@
 package com.optcatalog
-
 import AppTheme
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-
 import androidx.compose.runtime.collectAsState
-
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -15,8 +12,6 @@ import androidx.navigation.compose.rememberNavController
 import com.optcatalog.data.model.Product
 import com.optcatalog.ui.screens.product_details.ProductDetailScreen
 import com.optcatalog.ui.screens.product_list.ProductListScreen
-
-
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -25,7 +20,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            val viewModel = hiltViewModel<MainViewModel>()
 
+            viewModel.loadProductsFromFirebase()
             AppTheme {
 
                 val navController = rememberNavController()
