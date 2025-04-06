@@ -19,7 +19,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun DropdownMenu(){
+fun DropdownMenu(
+    onUpdateDatabase: () -> Unit
+){
     var expanded by remember {mutableStateOf(false)}
 
     Box(
@@ -38,7 +40,11 @@ fun DropdownMenu(){
             DropdownMenuItem(
                 text = { Text("Synchronize") },
                 leadingIcon = { Icon(Icons.Default.Refresh, contentDescription = "refresch detabase") },
-                onClick = {  }
+                onClick = {
+                    onUpdateDatabase()
+                    expanded = false
+                }
+
             )
         }
 
@@ -48,5 +54,7 @@ fun DropdownMenu(){
 @Preview
 @Composable
 private fun DropdownMenuPreview() {
-    DropdownMenu()
+    DropdownMenu(
+        onUpdateDatabase = {}
+    )
 }

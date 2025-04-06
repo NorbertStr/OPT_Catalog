@@ -1,6 +1,7 @@
 package com.optcatalog
 
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.optcatalog.data.model.Product
@@ -19,48 +20,77 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     private val repository: ProductRepository,
     private val firebaseRepository: FirebaseRepository
-) : ViewModel(){
-
-//    val products = repository.getAllProduct()
-//        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), emptyList())
+) : ViewModel() {
 
     private val _searchResults = MutableStateFlow<List<Product>>(emptyList())
     val products: StateFlow<List<Product>> = _searchResults.asStateFlow()
 
-    private val _firebaseProducts = MutableStateFlow<List<Product>>(emptyList())
-    val firebaseProducts: StateFlow<List<Product>> = _firebaseProducts.asStateFlow()
+//    val products = repository.getAllProduct()
+//        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), emptyList())
+//    private val _firebaseProducts = MutableStateFlow<List<Product>>(emptyList())
+//    val firebaseProducts: StateFlow<List<Product>> = _firebaseProducts.asStateFlow()
+//
+//    fun loadProductsFromFirebase() {
+//        viewModelScope.launch {
+//            _firebaseProducts.value = firebaseRepository.getAllProductsFromFirebase()
+//        }
+//    }
 
-    fun loadProductsFromFirebase(){
+    private var _downloadProductsFromFirebaseIsSuccess = MutableStateFlow(false)
+    val downloadProductsFromFirebaseIsSuccess = _downloadProductsFromFirebaseIsSuccess.asStateFlow()
+
+    fun updateLocalDatabaseFromFirebase() {
         viewModelScope.launch {
-            _firebaseProducts.value = firebaseRepository.getAllProductsFromFirebase()
+            var firebaseProducts =
+                firebaseRepository.getAllProductsFromFirebase()
+
+            if (firebaseProducts.isNotEmpty() && firebaseProducts.size >= 108) {
+                withContext(Dispatchers.IO) {
+                    deleteAllProducts()
+                    addProductsList(firebaseProducts)
+
+                }
+                _downloadProductsFromFirebaseIsSuccess.value = true
+            }else {
+                _downloadProductsFromFirebaseIsSuccess.value = false
+            }
+            Log.d("firebaseProductsSize", "${firebaseProducts.isNotEmpty()}")
+            Log.d("downloadProductsFromFirebaseIsSuccess","${_downloadProductsFromFirebaseIsSuccess.value}")
+        }
+
+    }
+
+    fun deleteAllProducts() {
+        viewModelScope.launch {
+            repository.deleteAllProducts()
         }
     }
 
     fun searchProduct(product: String) {
         viewModelScope.launch {
-            withContext(Dispatchers.IO){
-                repository.searchProduct(if(product.isBlank()) null else product)
-                    .collect{products ->
+            withContext(Dispatchers.IO) {
+                repository.searchProduct(if (product.isBlank()) null else product)
+                    .collect { products ->
                         _searchResults.value = products
                     }
             }
         }
     }
 
-    fun addProduct(product: Product){
+    fun addProduct(product: Product) {
         viewModelScope.launch {
             repository.addProduct(product)
         }
     }
 
-    fun addProductsList(products: List<Product>){
+    fun addProductsList(products: List<Product>) {
         viewModelScope.launch {
             repository.addProductList(products)
         }
     }
 
 
-    fun initializeDatabase(context: Context){
+    fun initializeDatabase(context: Context) {
 
         val sharedPreferences = context.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
 
