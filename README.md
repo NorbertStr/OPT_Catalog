@@ -26,9 +26,15 @@ OPT Catalog is a simple mobile application for searching products in a database.
 The application is currently in a closed beta testing phase. If you would like to test it, you can join the Google discussion group "OPT Catalog" at the following link: [Google Group - OPT Catalog](https://groups.google.com/g/opt-catalog). There, you will find the link to access the application.
 
 
+![optCatalogScreenLight](https://github.com/user-attachments/assets/9d610275-08f3-4790-9956-ddd73033f7b5)   ![optCatalogScreenLightDescryption](https://github.com/user-attachments/assets/a5bc8275-c3d2-4be6-b049-62a1cb1d38a0)
+
+![optCatalogNewDark](https://github.com/user-attachments/assets/474443cc-7459-4181-9e45-269d00f02d93)  ![optCatalogNewDarkDescryption](https://github.com/user-attachments/assets/bdc5ea97-e502-46f6-aa72-be70f2a51d9d)
 
 
 
-![screen3](https://github.com/user-attachments/assets/2ccf7b75-555d-437f-9300-c6bee1b11f33)  ![screen1](https://github.com/user-attachments/assets/5f3d0462-47d4-46b0-8458-c6e73d5a9141)
 
-![screen2](https://github.com/user-attachments/assets/138c29fb-156a-4fd6-a371-1835c53aa3f6) ![screen4](https://github.com/user-attachments/assets/07138bb0-edfd-4b18-a3ec-db44dd0c1c7c) 
+
+
+
+
+
