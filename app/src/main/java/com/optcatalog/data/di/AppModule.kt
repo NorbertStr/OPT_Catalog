@@ -2,6 +2,8 @@ package com.optcatalog.data.di
 
 import android.content.Context
 import androidx.room.Room
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.optcatalog.data.local.database.ProductDao
 import com.optcatalog.data.local.database.ProductDatabase
 import dagger.Module
@@ -29,4 +31,14 @@ object AppModule {
     fun provideNoteDao(database : ProductDatabase) : ProductDao {
         return database.productDao()
     }
+
+    @Provides
+    @Singleton
+    fun provideFirebaseDatabase(): DatabaseReference {
+        val database  = FirebaseDatabase.getInstance(
+            "https://opt-catalog-38e5e-default-rtdb.europe-west1.firebasedatabase.app/"
+        )
+        return database.reference
+    }
+
 }
