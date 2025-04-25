@@ -2,10 +2,12 @@ package com.optcatalog.data.di
 
 import android.content.Context
 import androidx.room.Room
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.optcatalog.data.local.database.ProductDao
 import com.optcatalog.data.local.database.ProductDatabase
+import com.optcatalog.data.repositories.FirebaseUrlAddress
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -36,9 +38,15 @@ object AppModule {
     @Singleton
     fun provideFirebaseDatabase(): DatabaseReference {
         val database  = FirebaseDatabase.getInstance(
-            "https://opt-catalog-38e5e-default-rtdb.europe-west1.firebasedatabase.app/"
+            FirebaseUrlAddress.getUrl()
         )
         return database.reference
+    }
+
+    @Provides
+    @Singleton
+    fun provideFirebaseAnalytics(@ApplicationContext context: Context): FirebaseAnalytics{
+        return FirebaseAnalytics.getInstance(context)
     }
 
 }

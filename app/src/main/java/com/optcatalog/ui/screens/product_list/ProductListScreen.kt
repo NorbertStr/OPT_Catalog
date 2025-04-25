@@ -49,6 +49,7 @@ fun ProductListScreen(
     searchProduct: (String) -> Unit,
     searchResults: State<List<Product>>,
     onNavigate: (item: Product) -> Unit,
+    onUpdateDatabase: () -> Unit,
     modifier: Modifier = Modifier
 ) {
 
@@ -65,6 +66,7 @@ fun ProductListScreen(
                     actionIconContentColor = Color.Black
                 ),
                 title = {
+                    // Search TextField
                     OutlinedTextField(
                         value = query,
                         onValueChange = { query = it },
@@ -100,7 +102,10 @@ fun ProductListScreen(
                             .fillMaxWidth()
                     )
                 },
-               navigationIcon = { DropdownMenu() }
+                // Dropdown Menu
+               navigationIcon = { DropdownMenu(
+                   onUpdateDatabase = onUpdateDatabase
+               ) }
             )
         }
     ) { innerPadding ->
@@ -171,7 +176,7 @@ private fun ProductListPreview() {
     val productList3: State<List<Product>> = productList2.collectAsState()
 
     AppTheme {
-        ProductListScreen(searchProduct = {}, searchResults = productList3, onNavigate = {})
+        ProductListScreen(searchProduct = {}, searchResults = productList3, onNavigate = {}, onUpdateDatabase = {})
     }
 }
 
@@ -224,6 +229,6 @@ private fun ProductListPreviewDark() {
     val productList3: State<List<Product>> = productList2.collectAsState()
 
     AppTheme {
-        ProductListScreen(searchProduct = {}, searchResults = productList3, onNavigate = {})
+        ProductListScreen(searchProduct = {}, searchResults = productList3, onNavigate = {}, onUpdateDatabase = {})
     }
 }

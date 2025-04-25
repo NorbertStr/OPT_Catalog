@@ -14,6 +14,10 @@ import javax.inject.Singleton
 @Singleton
 class ProductRepository @Inject constructor(private val productDao : ProductDao) {
 
+    suspend fun deleteAllProducts(){
+        productDao.deleteAllProducts()
+    }
+
     fun getAllProduct(): Flow<List<Product>> = productDao.getAllProducts()
 
     fun searchProduct(productName: String?) : Flow<List<Product>> {
