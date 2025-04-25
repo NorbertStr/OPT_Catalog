@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.optcatalog.data.model.Product
 import com.optcatalog.data.repositories.FirebaseRepository
 import com.optcatalog.data.repositories.ProductRepository
+import com.optcatalog.utils.FirebaseAnalyticsHelper
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -19,7 +20,8 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor(
     private val repository: ProductRepository,
-    private val firebaseRepository: FirebaseRepository
+    private val firebaseRepository: FirebaseRepository,
+    private val firebaseAnalyticsHelper: FirebaseAnalyticsHelper
 ) : ViewModel() {
 
     private val _searchResults = MutableStateFlow<List<Product>>(emptyList())
@@ -36,12 +38,14 @@ class MainViewModel @Inject constructor(
 //        }
 //    }
 
+
+    // Firebase Realtime Database
     private var _downloadProductsFromFirebaseIsSuccess = MutableStateFlow(false)
     val downloadProductsFromFirebaseIsSuccess = _downloadProductsFromFirebaseIsSuccess.asStateFlow()
 
     fun updateLocalDatabaseFromFirebase() {
         viewModelScope.launch {
-            var firebaseProducts =
+            val firebaseProducts =
                 firebaseRepository.getAllProductsFromFirebase()
 
             if (firebaseProducts.isNotEmpty() && firebaseProducts.size >= 108) {
@@ -51,8 +55,10 @@ class MainViewModel @Inject constructor(
 
                 }
                 _downloadProductsFromFirebaseIsSuccess.value = true
+                firebaseAnalyticsHelper.logEvent("update_database_success")
             }else {
                 _downloadProductsFromFirebaseIsSuccess.value = false
+                firebaseAnalyticsHelper.logEvent("update_database_failed")
             }
             Log.d("firebaseProductsSize", "${firebaseProducts.isNotEmpty()}")
             Log.d("downloadProductsFromFirebaseIsSuccess","${_downloadProductsFromFirebaseIsSuccess.value}")
@@ -60,7 +66,9 @@ class MainViewModel @Inject constructor(
 
     }
 
-    fun deleteAllProducts() {
+    // Room database
+
+    private fun deleteAllProducts() {
         viewModelScope.launch {
             repository.deleteAllProducts()
         }
@@ -98,4 +106,11 @@ class MainViewModel @Inject constructor(
             repository.insertProductFromJson(context, sharedPreferences)
         }
     }
+
+    // Google Analytics from Firebase
+
+    fun analyticsLogClickUpdateDatabase(){
+        firebaseAnalyticsHelper.logButtonClick("update_database")
+    }
+
 }

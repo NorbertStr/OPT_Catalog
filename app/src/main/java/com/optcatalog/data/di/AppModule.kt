@@ -2,6 +2,7 @@ package com.optcatalog.data.di
 
 import android.content.Context
 import androidx.room.Room
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.optcatalog.data.local.database.ProductDao
@@ -40,6 +41,12 @@ object AppModule {
             FirebaseUrlAddress.getUrl()
         )
         return database.reference
+    }
+
+    @Provides
+    @Singleton
+    fun provideFirebaseAnalytics(@ApplicationContext context: Context): FirebaseAnalytics{
+        return FirebaseAnalytics.getInstance(context)
     }
 
 }
